@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bzu Home Page</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #vcPic {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .myLine {
+            display: flex;
+        }
+
+        .myLine li {
+            list-style: none;
+        }
+
+        .myLine li a {
+            font-size: 22.5px;
+            color: rgb(0, 108, 184);
+            font-family: "Source Sans Pro", "Helv";
+            font-weight: bold;
+        }
+
+        .vertical-line {
+            display: inline-block;
+            border-left: 2px solid black;
+            /* Creates the vertical line */
+            height: 30px;
+            /* Adjust the height as needed */
+            margin: 0 10px;
+            /* Optional: Adds space around the line */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
+        <div class="container px-0">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Bzu
+                            Bosan Road, Multan, Punjab, Pakistan</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+92) 61
+                            9210071</a>
+                        <a href="#" class="text-muted me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i>registrar@bzu.edu.pk</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                                class="fab fa-facebook-f text-white"></i></a>
+                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                                class="fab fa-twitter text-white"></i></a>
+                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                                class="fab fa-instagram text-white"></i></a>
+                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i
+                                class="fab fa-linkedin-in text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid sticky-top px-0">
+        <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0">Bzu Multan</h1>
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Academics</a>
+                        <a href="#" class="nav-item nav-link">Admissions</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Campus Life</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Directorate of Student Affairs</a>
+                                <a href="#" class="dropdown-item">Directorate of Public Relations</a>
+                                <a href="#" class="dropdown-item">Student's Societies</a>
+                                <a href="#" class="dropdown-item">University Library</a>
+
+                            </div>
+                        </div>
+                        <a href="#" class="nav-item nav-link">Research</a>
+
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                        <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                        <a href="#"
+                            class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Contact
+                            us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <div class="header-carousel-item-img-1">
+                <img src="./img/cover3.jpg" class="img-fluid w-100" alt="Image">
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-start p-3">
+
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item mx-auto">
+            <div class="header-carousel-item-img-2">
+                <img src="img/cover2.png" class="img-fluid w-100" alt="Image">
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-center p-3">
+
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item">
+            <div class="header-carousel-item-img-3">
+                <img src="img/teachersday.jpg" class="img-fluid w-100" alt="Image">
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner text-end p-3">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid about bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img id="vcPic" src="img/vc1.jpeg" class="img-fluid w-100 rounded-top bg-white" alt="Image">
+                        <!-- <img src="img/about-2.jpg" class="img-fluid w-100 rounded-bottom" alt="Image"> -->
+                        <div>
+                            <h3>Vice Chancellor's Message</h3>
+                            <p>Thank you for choosing the Bahauddin Zakariya University for your academic pursuits. It
+                                is one of the nation's leading public research universities. The university is widely
+                                known as an institution of strong performance....</p>
+                            <div class="d-flex justify-content-center">
+                                <a target="_blank" class="btn btn-primary rounded-pill py-2 px-5 "
+                                    href="https://bzu.edu.pk/vc-message.php">read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <h4 class="text-primary">About Us</h4>
+                    <h1 class="display-5 mb-4">Bahauddin Zakariya University</h1>
+                    <p class="text ps-4 mb-4"> is located in Multan, Punjab, Pakistan. It is the Largest university of
+                        South Punjab. Bzu was formerly known as Multan University. It was renamed in honour of Hazrat
+                        Baha-ud-din Zakariya (RA). Bzu has
+                    </p>
+                    <div class="row g-4 justify-content-between mb-5">
+                        <div class="col-lg-6 col-xl-5">
+                            <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> 10 Faculties</p>
+                            <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i>47 Graduate (PhD) Programs </p>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-7">
+                            <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> 34 BS(5th Semester) Programs
+                            </p>
+                            <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> 13 Diploma Programs
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row g-4 justify-content-between mb-5">
+
+                        <div class="col-xl-7 mb-5">
+                            <div class="about-customer d-flex position-relative">
+                                <img src="./img/c1.jpg" class="img-fluid btn-xl-square position-absolute"
+                                    style="left: 0; top: 0;" alt="Image">
+                                <img src="img/c2.jpg" class="img-fluid btn-xl-square position-absolute"
+                                    style="left: 45px; top: 0;" alt="Image">
+                                <img src="img/c3.jpg" class="img-fluid btn-xl-square position-absolute"
+                                    style="left: 90px; top: 0;" alt="Image">
+                                <img src="img/c4.png" class="img-fluid btn-xl-square position-absolute"
+                                    style="left: 135px; top: 0;" alt="Image">
+                                <div class="position-absolute text-dark" style="left: 220px; top: 10px;">
+                                    <p class="mb-0"> 2 Sub-Campuses</p>
+                                    <p class="mb-0">(Lodhran & Vehari)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row g-4 text-center align-items-center justify-content-center">
+                        <div class="col-sm-4">
+                            <div class="bg-primary rounded p-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">90
+                                    </span>
+                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="text-white mb-0">Undergraudate Programs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="bg-dark rounded p-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-white"
+                                        data-toggle="counter-up">80 </span>
+                                    <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="mb-0"> Departments </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="bg-primary rounded p-4">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="counter-value fs-1 fw-bold text-dark"
+                                        data-toggle="counter-up">70</span>
+                                    <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
+                                </div>
+                                <div class="w-100 d-flex align-items-center justify-content-center">
+                                    <p class="text-white mb-0">Graduate(MS) Programs</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Campus News Services Start -->
+    <div class="container-fluid service py-5" style="background-color: 
+#ecfbfe;">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h4 class="text-primary"></h4>
+                <h1 class="display-4">Campus News</h1>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/news.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="service-content-inner">
+                                <a href="https://bzu.edu.pk/latest-news.php" class="h4 mb-4 d-inline-flex text-start">
+                                    Latest News & Media</a>
+                                <!-- <p class="mb-4">Innovative Minds: Exploring the Multan College of Arts Thesis Display! Sun, 06 Oct 2024 14:50:06 +0500
+                                </p> -->
+                                <a class="btn btn-light rounded-pill py-2 px-4"
+                                    href="https://bzu.edu.pk/latest-news.php">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/20_fall-2024-1.jpeg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="service-content-inner">
+                                <a href="https://bzu.edu.pk/admission_schedule.php"
+                                    class="h4 mb-4 d-inline-flex text-start"> Admission & Schedules</a>
+                                <!-- <p class="mb-4">
+                                    Admission Notice - PGD in Landscape Architecture (Weekend Program) Tue, 10 Sep 2024 15:15:40 +0500
+                                </p> -->
+                                <a class="btn btn-light rounded-pill py-2 px-4"
+                                    href="https://bzu.edu.pk/admission_schedule.php">View All </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/Date-Sheet1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="service-content-inner">
+                                <a href="https://bzu.edu.pk/" class="h4 mb-4 d-inline-flex text-start">Results & Date
+                                    Sheets
+                                </a>
+                                <!-- <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis
+                                    est sapiente natus officiis maxime
+                                </p> -->
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="https://bzu.edu.pk/">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item bg-light rounded">
+                        <div class="service-img">
+                            <img src="img/Prospectus-rightbar1.png" class="img-fluid w-100 rounded-top" alt="">
+                        </div>
+                        <div class="service-content text-center p-4">
+                            <div class="service-content-inner">
+                                <a href="https://bzu.edu.pk/" class="h4 mb-4 d-inline-flex text-start"> Jobs & Vacancies
+                                </a>
+                                <!-- <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis
+                                    est sapiente natus officiis maxime
+                                </p> -->
+                                <a class="btn btn-light rounded-pill py-2 px-4" href="https://bzu.edu.pk/">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp my-5" data-wow-delay="0.1s"
+                        href="https://bzu.edu.pk/">More Campus News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+
+
+    <!-- Academia -->
+    <div class="b-example-divider"></div>
+    <div class="container my-5">
+        <div class="p-4 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">Academics</h1>
+            <p class="lead">
+                Bahauddin Zakariya University (BZU) is committed to providing quality education that prepares students
+                for leadership and active citizenship.
+            </p>
+        </div>
+
+        <div class="album  bg-body-tertiary">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/c1.jpg" alt="" width="100%" height="225">
+
+                            <div class="card-body">
+                                <h3>Faculty of Pharmacy</h3>
+                                <p class="card-text">Offering strong foundations in pharmacy with hands-on learning to
+                                    prepare students for careers in healthcare and research.</p>
+                                <strong>
+                                    <a style="color: rgb(0, 108, 184);" href="">Read More <i
+                                            class="bi bi-chevron-right"></i></a>
+                                </strong>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/science.jpeg" alt="" width="100%" height="225">
+                            <div class="card-body">
+                                <h3>Faculty of Science</h3>
+                                <p class="card-text">Offering a strong science foundation with practical learning to
+                                    prepare students for careers in research, technology, and innovation.</p>
+                                <strong>
+                                    <a style="color: rgb(0, 108, 184);" href="">Read More <i
+                                            class="bi bi-chevron-right"></i></a>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/law.jpeg" alt="" width="100%" height="225">
+                            <div class="card-body">
+                                <h3>Faculty of Law
+                                </h3>
+                                <p class="card-text">Offering a strong legal foundation with practical learning to
+                                    prepare students for careers in law, governance, and advocacy.</p>
+                                <strong>
+                                    <a style="color: rgb(0, 108, 184);" href="">Read More <i
+                                            class="bi bi-chevron-right"></i></a>
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 my-5 text-center bg-body-tertiary rounded-3">
+            <h3 style="font-weight: bold;" class="text-body-emphasis">Seven faculties in which to pursue your passions
+            </h3>
+            <div class="container "></div>
+            <ul class="myLine">
+                <li><a href="">Arts</a> </li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Engineering</a></li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Commerce</a></li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Islamic Studies</a></li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Agricultural</a></li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Veterinary Sciences</a></li>
+                <li class="vertical-line"></li>
+                <li> <a href="">Food Science</a></li>
+                <li></li>
+            </ul>
+            <div class="col-12">
+                <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp my-5" data-wow-delay="0.1s"
+                    href="https://bzu.edu.pk/">More about academics</a>
+            </div>
+        </div>
+    </div>
+    <!-- Academa End -->
+
+    <!-- Stand out -->
+    <section id="cta1" class="cta">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <!-- Duration increased to 1000ms, animation occurs only once -->
+            <div class="text-center">
+                <h3>Excellence in Every Step</h3>
+                <p>From groundbreaking research to transformative learning experiences,<br> BZU continues to set the
+                    standard in higher education.</p>
+                <a class="cta-btn rounded-5" href="#" target="_blank">Read More!</a>
+            </div>
+        </div>
+    </section>
+    <!-- Stand out end -->
+
+    <!--Academic Programs Blog Start -->
+    <div class="container-fluid blog pb-5 mt-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h1 class="display-4">Academic Programs</h1>
+                <p>Bahauddin Zakariya University (BZU) offers a diverse array of academic programs <br> ranging from
+                    undergraduate to postgraduate levels, designed to foster intellectual growth, innovation, and
+                    professional development.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c1.jpg" data-lightbox="blog-1"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Undergraduate Programs</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c2.jpg" data-lightbox="blog-2"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Graduate (MS)Program</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c3.jpg" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Graduate (PhD) Program</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c4.png" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c4.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">BS(5th Semester) Program</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c5.png" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c5.png" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">ADP Programs</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                        <div class="project-img">
+                            <img src="img/c6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                            <div class="blog-plus-icon">
+                                <a href="img/c6.jpg" data-lightbox="blog-3"
+                                    class="btn btn-primary btn-md-square rounded-pill"><i
+                                        class="fas fa-plus fa-1x"></i></a>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <a href="#" class="h4">Diploma Programs</a>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+ 
+
+    <!-- Upcoming events Testimonial Start -->
+    <div class="container-fluid testimonial bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="h-100 rounded">
+                        <h4 class="text-primary">Updates </h4>
+                        <h1 class="display-4 mb-4">Upcoming Events</h1>
+                        <p class="mb-4">Stay informed with the latest departmental news, media updates, and upcoming
+                            events at BZU.</p>
+                        <a target="_blank" class="btn btn-primary rounded-pill text-white py-3 px-5"
+                            href="https://bzu.edu.pk/latest-events.php">View All Events <i
+                                class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <img src="./img/e1.png" alt="">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="my-auto text-start">
+                                    <h5 class="mt-2"><a style="color: rgb(16, 33, 71);" href="">Mastering Digital Tools
+                                            for Field Data Collection
+                                            <i class="bi bi-chevron-right"></i></a></h5>
+                                    <p class="mb-0">Upcoming Event </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <img src="./img/e2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="my-auto text-start">
+                                    <h5 class="mt-2"><a style="color: rgb(16, 33, 71);" href=""> Celebrations of
+                                            Achievement
+                                            <i class="bi bi-chevron-right"></i></a></h5>
+                                    <p class="mb-0">Upcoming Event</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <img src="./img/e3.jpeg" alt="" width="307" height="149">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="my-auto text-start">
+                                    <h5 class="mt-2"><a style="color: rgb(16, 33, 71);" href="">Two-Day Workshop on
+                                            Research Methodology
+                                            <i class="bi bi-chevron-right"></i></a></h5>
+                                    <p class="mb-0">Upcoming Event</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <img src="./img/e4.jpeg" alt="" width="307" height="149">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="my-auto text-start">
+                                    <h5 class="mt-2"><a style="color: rgb(16, 33, 71);" href="">First 1000 Golden days
+                                            <i class="bi bi-chevron-right"></i></a></h5>
+                                    <p class="mb-0">Upcoming Event</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <img src="./img/news.png" alt="" width="307" height="149">
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="my-auto text-start">
+                                    <h5 class="mt-2"><a style="color: rgb(16, 33, 71);" href="">MPhil-PhD Admission Test
+                                            <i class="bi bi-chevron-right"></i></a></h5>
+                                    <p class="mb-0">Upcoming Event</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Newsletter</h4>
+                            <p class="mb-3">Subscribe to Bahauddin Zakariya University, Multan newsletter for the latest
+                                university news, events, and academic updates.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Enter your email">
+                                <button type="button"
+                                    class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Faculty & Staff Portal </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Quick Downloads</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>BZU Webmail</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>ORIC</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Quality Enhancement</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Turnitin Plagiarism</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Apply Online
+                        </a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Jobs & Vacancies</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Program Finder</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Faculty Member Finder</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Student Accomodation</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i>Turnitin Plagiarism</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Academic Calanders</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i>Bzu,
+                            Bosan Road, Multan, Punjab, Pakistan</a>
+
+                        <a href=""><i class="fas fa-envelope me-2"></i> registrar@bzu.edu.pk</a>
+                        <a href=""><i class="fas fa-phone me-2"></i>(+92) 61 9210071</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <span class="text-body text-center "><a href="#" class="border-bottom text-primary"><i
+                            class="fas fa-copyright text-light me-2"></i>Bahauddin Zakariya University, Multan</a>, All
+                    right
+                    reserved.
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
